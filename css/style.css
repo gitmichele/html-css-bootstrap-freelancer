@@ -25,3 +25,11 @@
         max-width: 1140px;
     }
 }
+
+
+/* DEBUG:  */
+[class*="col-"]{
+    height: 200px;
+    background-color: #FF000050;
+    border: 1px solid black;
+}
