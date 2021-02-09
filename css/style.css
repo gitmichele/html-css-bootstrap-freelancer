@@ -1,35 +1,28 @@
 /* REGOLE GENERALI */
 
-/* media query per il contenitore degli elementi della pagina */
-.ms_container{
-    margin: auto;
-}
-
-@media all and (max-width: 767px) {
-    .ms_container{
-        max-width: 540px;
-    }
-}
-@media all and (min-width: 768px) and (max-width: 991px) {
-    .ms_container{
-        max-width: 720px;
-    }
-}
-@media all and (min-width: 992px) and (max-width: 1199px) {
-    .ms_container{
-        max-width: 960px;
-    }
-}
-@media all and (min-width: 1200px) {
-    .ms_container{
-        max-width: 1140px;
-    }
-}
-
-
 /* DEBUG:  */
 [class*="col-"]{
-    height: 200px;
+    height: 100px;
     background-color: #FF000050;
+    border: 1px solid black;
+}
+.section-title{
+    height: 100px;
+    background-color: #FF000080;
+    border: 1px solid black;
+}
+#download_button{
+    height: 100px;
+    background-color: #FF000080;
+    border: 1px solid black;
+}
+form{
+    height: 100px;
+    background-color: #FF000080;
+    border: 1px solid black;
+}
+#footer-copyright{
+    height: 100px;
+    background-color: #FF000080;
     border: 1px solid black;
 }
