@@ -1,12 +1,11 @@
 /* REGOLE GENERALI */
 
 /* DEBUG:  */
-[class*="col-"]{
+/* [class*="col-"]{
     height: 100px;
-    background-color: #FF000050;
     border: 1px solid black;
-}
-.section-title{
+} */
+/* .section-title{
     height: 100px;
     background-color: #FF000080;
     border: 1px solid black;
@@ -25,4 +24,111 @@ form{
     height: 100px;
     background-color: #FF000080;
     border: 1px solid black;
+} */
+
+
+
+/* HEADER */
+/* NAVBAR SECTION*/
+nav{
+    background-color: #2c3e50;
+}
+
+ /* DEBUG:  */
+nav [class*="col-"]{
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+/* JUMBOTRON SECTION */
+#jumbotron{
+    background-color: #1abc9c;
+}
+
+/* DEBUG:  */
+#jumbotron > .container{
+    height: 550px;
+    border: 1px solid black;
+}
+
+
+
+/* MAIN */
+/* PORTFOGLIO SECTION */
+/* DEBUG:  */
+#portfoglio .section-title{
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 -15px 0 -15px;
+}
+
+/* DEBUG:  */
+#portfoglio [class*="col-"]{
+   height: 300px;
+   border: 1px solid black;
+}
+
+
+/* ABOUT SECTION */
+#about{
+    background-color: #1abc9c;
+}
+
+/* DEBUG:  */
+#about .section-title{
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 -15px 0 -15px;
+}
+
+/* DEBUG:  */
+#about [class*="col-"]{
+   height: 250px;
+   border: 1px solid black;
+}
+
+/* DEBUG:  */
+#download_button{
+    height: 100px;
+    border: 1px solid black;
+    margin: 0 -15px 0 -15px;
+}
+
+
+/* CONTACTS SECTION */
+/* DEBUG:  */
+#contacts .section-title{
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 -15px 0 -15px;
+}
+
+/* DEBUG:  */
+form{
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 -15px 0 -15px;
+}
+
+
+
+/* FOOTER */
+/* FOOTER LINKS */
+#footer-links{
+    background-color: #2c3e50;
+}
+
+/* DEBUG:  */
+#footer-links [class*="col-"]{
+   height: 250px;
+   border: 1px solid black;
+}
+
+
+/* FOOTER COPYRIGHT */
+#footer-copyright{
+    background-color: #1a252f;
+    /* DEBUG:  */
+    height: 100px;
 }
