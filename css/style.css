@@ -153,6 +153,7 @@ header{
     padding-bottom: 9rem;
 }
 
+/* immagini e container per l'overlay in hover */
 #portfolio img, .ms_overlay_container {
     margin: auto;
     width: 100%;
@@ -170,6 +171,7 @@ header{
     background-color: #1abc9c;
 }
 
+/* hover */
 #portfolio .ms_overlay{
     transition: .5s ease;
     opacity: 0;
@@ -202,26 +204,30 @@ header{
     background-color: #1abc9c;
 }
 
-/* DEBUG:  */
-#about .section-title{
-    height: 250px;
-    border: 1px solid black;
-    margin: 0 -15px 0 -15px;
+#about p, #about a{
+    font-size: 2rem;
+    padding-bottom: 3rem;
 }
 
-/* DEBUG:  */
-#about [class*="col-"]{
-   height: 250px;
-   border: 1px solid black;
+#about .paragraph_container {
+    width: 70%;
+    margin: auto;
 }
 
-/* DEBUG:  */
-#download_button{
-    height: 100px;
-    border: 1px solid black;
-    margin: 0 -15px 0 -15px;
+#about a{
+    padding: 2rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
 }
 
+#about .section-padding-bottom{
+    text-align: center;
+}
+
+#about a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
 
 /* CONTACTS SECTION */
 /* DEBUG:  */
