@@ -4,8 +4,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    text-align: left;
     background-color: #fff;
+}
+
+.white-char{
+    color: #fff;
+}
+
+.blue-char {
+    color: #2c3e50;
 }
 
 /* padding ad aprire e chiudere ogni sezione */
@@ -14,7 +21,7 @@ body {
 }
 
 .section-padding-bottom{
-    padding-bottom: 9rem;
+    padding-bottom: 9rem; /* WARNING: se cambia questo cambia anche il padding bottom dell'ultima immagine della sezione portfolio*/
 }
 
 /* separatore dei titoli */
@@ -22,10 +29,13 @@ body {
     font-size: 6rem;
     font-weight: 900;
     margin: 0 auto;
+    text-align: center;
 }
-
-.white{
-    color: #fff;
+.section-title > h2{
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .separator{
@@ -47,12 +57,31 @@ body {
     border-radius: 1rem;
 }
 
+.separator-line-left{
+    margin-right: 2rem;
+}
+
+.separator-line-right{
+    margin-left: 2rem;
+}
+
+.separator-line-blue{
+    background-color: #2c3e50;
+}
+
+.separator-line-white{
+    background-color: #fff;
+}
+
+
+
 
 /* HEADER */
 /* NAVBAR SECTION*/
 header{
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 /* BS navbar */
 /* cambio sfonfo */
@@ -106,37 +135,66 @@ header{
     margin-bottom: 4rem;
 }
 
-#jumbotron .separator-line{
-    background-color: #fff;
-}
-
-#jumbotron .separator-line:first-child{
-    margin-right: 2rem;
-}
-
-#jumbotron .separator-line:last-child{
-    margin-left: 2rem;
-}
-
 #jumbotron p{
     font-size: 2.2rem;
 }
 
 
+
 /* MAIN */
-/* PORTFOGLIO SECTION */
-/* DEBUG:  */
-#portfoglio .section-title{
-    height: 250px;
-    border: 1px solid black;
-    margin: 0 -15px 0 -15px;
+/* PORTFOLIO SECTION */
+/* tutto il testo centrato */
+#portfolio figure{
+    padding: 0 calc(2.5rem - 15px) 5rem calc(2.5rem - 15px);
 }
 
-/* DEBUG:  */
-#portfoglio [class*="col-"]{
-   height: 300px;
-   border: 1px solid black;
+/* do lo stesso margine divisore della classe section-margin-bottom */
+#portfolio div:last-child > figure{
+    padding-bottom: 9rem;
 }
+
+#portfolio img, .ms_overlay_container {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 1rem;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.ms_overlay_container{
+    position: relative;
+    background-color: #1abc9c;
+}
+
+#portfolio .ms_overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#portfolio .ms_overlay_container:hover img {
+    opacity: 0.2;
+}
+
+#portfolio .ms_overlay_container:hover .ms_overlay {
+    opacity: 1;
+}
+
+.ms_add {
+    color: white;
+    font-size: 7.5rem;
+}
+
+
 
 
 /* ABOUT SECTION */
